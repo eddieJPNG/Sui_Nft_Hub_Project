@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Hub - Galeria</title>
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 NFT Hub</h1>
+            <p>Galeria de NFTs on-chain</p>
+        </header>
+
+        <div class="config">
+            <div class="config-group">
+                <label>Endereço do proprietário:</label>
+                <input type="text" id="ownerAddress" placeholder="0x..." value="">
+            </div>
+            <div class="config-group">
+                <label>Package ID:</label>
+                <input type="text" id="packageId" placeholder="0x..." value="">
+            </div>
+            <button onclick="fetchNFTs()">Carregar NFTs</button>
+            <div class="status" id="status"></div>
+        </div>
+
+        <div id="gallery" class="gallery"></div>
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
